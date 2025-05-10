@@ -8,9 +8,12 @@
 - HTML entity
 - Copy to clipboard functionality
 
+  ![image](https://github.com/user-attachments/assets/ffa3deed-2046-42c7-b008-8bfb49ed35d4)
+
+
 ## 🌐 Live Demo
 
-[Click here to try it out!](#) <!-- Replace # with your GitHub Pages or live URL -->
+[Click here to try it out!](https://sujan-v.github.io/Unicode-ASCII-Detection/) <!-- Replace # with your GitHub Pages or live URL -->
 
 ---
 
