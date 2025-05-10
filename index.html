@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Inspector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Character Inspector</h1>
+        
+        <div class="input-group">
+            <input type="text" id="characterInput" maxlength="1" placeholder="Enter a single character">
+        </div>
+        
+        <button onclick="detectCharacter()">
+            <i class="fas fa-search"></i> Analyze Character
+        </button>
+        
+        <div id="resultContainer" style="display: none;">
+            <div class="character-display" id="characterDisplay"></div>
+            
+            <div class="result-container">
+                <div class="result-item">
+                    <span class="result-label">Character Type:</span>
+                    <span class="result-value" id="charType"></span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Unicode Code Point:</span>
+                    <span class="result-value-container">
+                        <span id="unicodeValue"></span>
+                        <button class="copy-btn tooltip" onclick="copyToClipboard('unicodeValue')">
+                            <i class="far fa-copy"></i>
+                            <span class="tooltiptext">Copy to clipboard</span>
+                        </button>
+                    </span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">UTF-8 Encoding:</span>
+                    <span class="result-value-container">
+                        <span id="utf8Value"></span>
+                        <button class="copy-btn tooltip" onclick="copyToClipboard('utf8Value')">
+                            <i class="far fa-copy"></i>
+                            <span class="tooltiptext">Copy to clipboard</span>
+                        </button>
+                    </span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">HTML Entity:</span>
+                    <span class="result-value-container">
+                        <span id="htmlEntity"></span>
+                        <button class="copy-btn tooltip" onclick="copyToClipboard('htmlEntity')">
+                            <i class="far fa-copy"></i>
+                            <span class="tooltiptext">Copy to clipboard</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
